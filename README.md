@@ -60,7 +60,7 @@ Desain antarmuka dikembangkan menggunakan Figma. Lihat prototipe di sini:
 
 ## 🎥 Link Presentasi 
 
-- [Slide]()
+- [Slide](https://www.canva.com/design/DAGqB1dwYwI/KeYv2pzAhuIH6AATm0yyyQ/edit?utm_content=DAGqB1dwYwI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ---
 

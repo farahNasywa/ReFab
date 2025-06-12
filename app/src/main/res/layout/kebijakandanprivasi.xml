@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Top Bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <!-- Hamburger Icon -->
+            <ImageButton
+                android:id="@+id/btnMenu"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_menu"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Menu" />
+
+
+            <!-- Logo -->
+            <LinearLayout
+                android:id="@+id/logo_container"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REFAB"
+                    android:textColor="#6273A4"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Search Icon -->
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="48dp"
+                android:src="@drawable/ic_search" />
+
+            <!-- Bag Icon -->
+            <ImageView
+                android:id="@+id/icon_bag"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_cart" />
+        </RelativeLayout>
+
+        <!-- Back Arrow and Title -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kebijakan dan Privasi"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="65dp" />
+        </LinearLayout>
+
+        <!-- Content -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selamat datang di Refab!\nKami berkomitmen untuk melindungi dan menghormati privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi Anda saat menggunakan aplikasi Refab."
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Sections -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Informasi yang Kami Kumpulkan"
+            android:textColor="#4A63A9"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kami dapat mengumpulkan informasi berikut:\n• Informasi Akun: Nama, alamat email, nomor telepon, dan alamat pengiriman.\n• Informasi Aktivitas: Riwayat permintaan kain, donasi kain, dan interaksi dalam aplikasi.\n• Informasi Lokasi: Untuk membantu menemukan distribusi kain terdekat (hanya jika Anda memberikan izin).\n• Data Teknis: Informasi perangkat dan log penggunaan aplikasi."
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Bagaimana Kami Menggunakan Informasi Anda"
+            android:textColor="#4A63A9"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kami menggunakan informasi yang dikumpulkan untuk:\n• Memproses permintaan dan distribusi kain perca.\n• Memberikan rekomendasi kain yang sesuai.\n• Mengelola akun dan pengalaman pengguna Anda.\n• Mengirimkan notifikasi terkait aktivitas Anda.\n• Meningkatkan layanan Refab melalui analisis penggunaan.\nKami tidak membagikan informasi pribadi Anda kepada pihak ketiga tanpa persetujuan Anda, kecuali diwajibkan oleh hukum."
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Penyimpanan dan Keamanan Data"
+            android:textColor="#4A63A9"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kami menggunakan langkah-langkah keamanan yang wajar untuk melindungi data Anda dari akses, perubahan, atau pengungkapan yang tidak sah.\nNamun, perlu diketahui bahwa tidak ada metode transmisi data melalui internet yang sepenuhnya aman."
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Hak Pengguna"
+            android:textColor="#4A63A9"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sebagai pengguna, Anda memiliki hak untuk:\n• Mengakses, memperbarui, atau menghapus informasi pribadi Anda.\n• Menarik izin pengumpulan data tertentu, seperti data lokasi.\n• Menghubungi kami terkait pertanyaan penggunaan data."
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Perubahan Kebijakan Privasi"
+            android:textColor="#4A63A9"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Perubahan penting akan diinformasikan melalui aplikasi atau email. Kami mendorong Anda untuk meninjau kebijakan ini secara berkala."
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. Kontak Kami"
+            android:textColor="#4A63A9"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jika Anda memiliki pertanyaan atau keluhan terkait Kebijakan Privasi ini, Anda dapat menghubungi kami di:\nEmail: support@refab.ap"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="32dp" />
+    </LinearLayout>
+</ScrollView>
